@@ -3,8 +3,10 @@ package Travel.and.Tourism.Management.System;
 import javax.swing.*;
 import javax.swing.border.LineBorder;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class Login extends JFrame {
+public class Login extends JFrame implements ActionListener {
 
     JLabel userName,password;
     JTextField userNameText,passwordText;
@@ -61,6 +63,7 @@ public class Login extends JFrame {
         loginButton.setBackground(new Color(131,193,233));
         loginButton.setForeground(Color.WHITE);
         loginButton.setBorder(new LineBorder(new Color(131,193,233)));
+        loginButton.addActionListener(this);
         panel2.add(loginButton);
 
         signupButton=new JButton("Signup");
@@ -68,6 +71,7 @@ public class Login extends JFrame {
         signupButton.setBackground(new Color(131,193,233));
         signupButton.setForeground(Color.WHITE);
         signupButton.setBorder(new LineBorder(new Color(131,193,233)));
+        signupButton.addActionListener(this);
         panel2.add(signupButton);
 
         forgetPassButton=new JButton("Forget Password");
@@ -75,6 +79,7 @@ public class Login extends JFrame {
         forgetPassButton.setBackground(new Color(131,193,233));
         forgetPassButton.setForeground(Color.WHITE);
         forgetPassButton.setBorder(new LineBorder(new Color(131,193,233)));
+        forgetPassButton.addActionListener(this);
         panel2.add(forgetPassButton);
 
         JLabel label=new JLabel("Trouble in Login...");
@@ -88,5 +93,13 @@ public class Login extends JFrame {
 
     public static void main(String[] args) {
         new Login();
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+
+        if(e.getSource()==signupButton){
+            new Signup();
+        }
     }
 }

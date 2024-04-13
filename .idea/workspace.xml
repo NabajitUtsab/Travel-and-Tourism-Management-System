@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2efda0fc-cec2-4faf-a4a8-8937ecccbdf9" name="Changes" comment="Changed by NabajitUtsab">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Travel/and/Tourism/Management/System/Splash.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Travel/and/Tourism/Management/System/Splash.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Travel/and/Tourism/Management/System/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Travel/and/Tourism/Management/System/Login.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,20 +32,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "F:/Projects/Travel and Tourism Management System",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/Projects/Travel and Tourism Management System&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\Projects\Travel and Tourism Management System\src" />
@@ -60,7 +60,8 @@
       <option name="presentableId" value="Default" />
       <updated>1712913229736</updated>
       <workItem from="1712913230822" duration="616000" />
-      <workItem from="1712913869163" duration="7115000" />
+      <workItem from="1712913869163" duration="7339000" />
+      <workItem from="1712989052061" duration="5287000" />
     </task>
     <task id="LOCAL-00001" summary="Changed by NabajitUtsab">
       <option name="closed" value="true" />
@@ -70,7 +71,23 @@
       <option name="project" value="LOCAL" />
       <updated>1712917555373</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Changed by NabajitUtsab">
+      <option name="closed" value="true" />
+      <created>1712942006575</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1712942006576</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Changed by NabajitUtsab">
+      <option name="closed" value="true" />
+      <created>1712942091346</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712942091346</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
