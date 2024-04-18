@@ -4,8 +4,11 @@ import javax.lang.model.element.Name;
 import javax.swing.*;
 import javax.swing.border.LineBorder;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.sql.ResultSet;
 
-public class Signup extends JFrame {
+public class Signup extends JFrame implements ActionListener {
 JLabel userName,name,password,question,answer;
 JTextField userNameText,nameText,passwordText,answerText;
 Choice questionChoice;
@@ -82,6 +85,7 @@ JButton createButton,backButton;
         createButton.setBackground(new Color(133,193,233));
         createButton.setForeground(Color.WHITE);
         createButton.setBorder(new LineBorder(new Color(133,193,233)));
+        createButton.addActionListener(this);
         panel1.add(createButton);
 
         backButton = new JButton("Back");
@@ -89,6 +93,7 @@ JButton createButton,backButton;
         backButton.setBackground(new Color(133,193,233));
         backButton.setForeground(Color.WHITE);
         backButton.setBorder(new LineBorder(new Color(133,193,233)));
+        backButton.addActionListener(this);
         panel1.add(backButton);
 
 
@@ -112,5 +117,35 @@ JButton createButton,backButton;
 
     public static void main(String[] args) {
         new Signup();
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if(e.getSource()==createButton){
+
+            String sUserName=userNameText.getText();
+            String sName=nameText.getText();
+            String sPassword=passwordText.getText();
+            String sQuestion= questionChoice.getSelectedItem();
+            String sAnswer = answerText.getText();
+
+            String query="insert into signup values ('"+sUserName+"','"+sName+"','"+sPassword+"','"+sQuestion+"','"+sAnswer+"')";
+            try{
+                Database database = new Database();
+              database.statement.executeUpdate(query);
+
+              JOptionPane.showMessageDialog(null,"Account Created successfully");
+              setVisible(false);
+              new Login();
+
+            }catch (Exception exception){
+                exception.printStackTrace();
+            }
+        }
+        else {
+            setVisible(false);
+            new Login();
+        }
+
     }
 }

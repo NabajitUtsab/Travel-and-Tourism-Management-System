@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2efda0fc-cec2-4faf-a4a8-8937ecccbdf9" name="Changes" comment="Changed by NabajitUtsab">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travel and Tourism Management System.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Travel and Tourism Management System.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Travel/and/Tourism/Management/System/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Travel/and/Tourism/Management/System/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Travel/and/Tourism/Management/System/Signup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Travel/and/Tourism/Management/System/Signup.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,20 +34,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/Projects/Travel and Tourism Management System&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "F:/MENTOR SUMIT/mysql-connector-java-8.0.28.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\Projects\Travel and Tourism Management System\src" />
@@ -62,6 +72,9 @@
       <workItem from="1712913230822" duration="616000" />
       <workItem from="1712913869163" duration="7339000" />
       <workItem from="1712989052061" duration="5287000" />
+      <workItem from="1713033195304" duration="881000" />
+      <workItem from="1713089460831" duration="188000" />
+      <workItem from="1713434092215" duration="2067000" />
     </task>
     <task id="LOCAL-00001" summary="Changed by NabajitUtsab">
       <option name="closed" value="true" />
@@ -87,7 +100,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712942091346</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Changed by NabajitUtsab">
+      <option name="closed" value="true" />
+      <created>1713033229191</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1713033229191</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
