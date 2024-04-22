@@ -5,6 +5,7 @@ import javax.swing.border.LineBorder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.ResultSet;
 
 public class Login extends JFrame implements ActionListener {
 
@@ -106,6 +107,27 @@ public class Login extends JFrame implements ActionListener {
             setVisible(false);
             new ForgetPassword();
 
+        }
+        else if (e.getSource()==loginButton) {
+            String sUserName = userNameText.getText();
+            String sPassword = passwordText.getText();
+
+            try{
+                Database database = new Database();
+                ResultSet resultSet= database.statement.executeQuery("SELECT * FROM signup where Username='"+sUserName+"' AND Password='"+sPassword+"' ");
+
+                if (resultSet.next()){
+                    JOptionPane.showMessageDialog(null,"Login Successfull");
+
+                    new Loading(sUserName);
+                    setVisible(false);
+                }
+                else{
+                    JOptionPane.showMessageDialog(null,"Login Failed.Try Again");
+                }
+            }catch (Exception exception){
+                exception.printStackTrace();
+            }
         }
     }
 }

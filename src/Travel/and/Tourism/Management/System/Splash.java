@@ -31,10 +31,10 @@ public class Splash extends JFrame implements Runnable{
            {
                Thread.sleep(10);
 
-        }
+           }
            catch(Exception e){
             e.printStackTrace();
-        }
+           }
        }
     }
 
