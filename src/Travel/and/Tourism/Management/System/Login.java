@@ -123,7 +123,7 @@ public class Login extends JFrame implements ActionListener {
                     setVisible(false);
                 }
                 else{
-                    JOptionPane.showMessageDialog(null,"Login Failed.Try Again");
+                    JOptionPane.showMessageDialog(null,"Incorrect Login");
                 }
             }catch (Exception exception){
                 exception.printStackTrace();

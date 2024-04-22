@@ -70,7 +70,7 @@ public class Loading extends JFrame implements Runnable{
 
                     setVisible(false);
                 }
-                Thread.sleep(60);
+                Thread.sleep(50);
             }
 
         }catch(Exception exception){
