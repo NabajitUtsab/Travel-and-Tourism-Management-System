@@ -5,6 +5,7 @@ import javax.swing.border.LineBorder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.ResultSet;
 
 public class AddCustomerDetails extends JFrame implements  ActionListener{
 
@@ -15,7 +16,11 @@ public class AddCustomerDetails extends JFrame implements  ActionListener{
     JRadioButton rMale,rFemale;
     JButton addButton,backButton;
 
-    AddCustomerDetails(){
+    String userName;
+
+    AddCustomerDetails(String userName){
+        this.userName=userName;
+
         setBounds(250,100,850,550);
         getContentPane().setBackground(Color.white);
         setLayout(null);
@@ -161,15 +166,63 @@ public class AddCustomerDetails extends JFrame implements  ActionListener{
         add(imageLabel);
 
 
+        try{
+            Database database=new Database();
+            ResultSet resultSet=database.statement.executeQuery("SELECT * FROM signup WHERE Username ='"+userName+"'");
+            while(resultSet.next()){
+                userNameLabelText.setText(resultSet.getString("Username"));
+                nameLabelText.setText(resultSet.getString("Name"));
+            }
+
+        }catch(Exception e){
+
+            e.printStackTrace();
+        }
+
+
         setVisible(true);
     }
 
     public static void main(String[] args) {
-        new AddCustomerDetails();
+        new AddCustomerDetails("");
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        if(e.getSource()==addButton){
+            String sId=idChoiceLabelText.getSelectedItem();
+            String sIdNo=idNumberLabelText.getText();
 
+            String sGender = null;
+            if(rMale.isSelected()){
+                sGender="Male";
+            } else {
+                sGender="Female";
+            }
+
+            String sCountry=countryLabelText.getText();
+            String sAddress=addressLabelText.getText();
+            String sPhone = phoneLabelText.getText();
+            String sEmail = emailLabelText.getText();
+
+            try {
+
+                Database database = new Database();
+                database.statement.executeUpdate("INSERT INTO customer (username, id, id_no, name, gender, country, address, phone, email)" +
+                        " VALUES ('"+userName+"','"+sId+"','"+sIdNo+"','"+nameLabelText.getText()+"', '"+sGender+"','"+sCountry+"','"+sAddress+"','"+sPhone+"','"+sEmail+"')");
+
+                JOptionPane.showMessageDialog(null,"Details added succesfully");
+                new Dashboard(userName);
+                setVisible(false);
+
+            }
+            catch(Exception exception){
+                exception.getStackTrace();
+            }
+        }
+
+        else{
+
+        }
     }
 }

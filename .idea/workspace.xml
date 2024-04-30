@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6f7aa76-8f67-4e40-84a7-3304214d44c3" name="Changes" comment="Changed by NabajitUtsab">
-      <change afterPath="$PROJECT_DIR$/src/Travel/and/Tourism/Management/System/AddCustomerDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icons/newcustomer.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/newcustomer.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Travel/and/Tourism/Management/System/AddCustomerDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Travel/and/Tourism/Management/System/AddCustomerDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Travel/and/Tourism/Management/System/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Travel/and/Tourism/Management/System/Dashboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Travel/and/Tourism/Management/System/Loading.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Travel/and/Tourism/Management/System/Loading.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +40,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/)INDUSTRIAL MENTORSHIP/SpringBootTasks/ReTask3&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/MENTOR SUMIT/Shiktesi&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
@@ -83,7 +84,10 @@
       <workItem from="1713857848713" duration="1776000" />
       <workItem from="1713950648569" duration="3328000" />
       <workItem from="1713989131505" duration="107000" />
-      <workItem from="1714033507049" duration="9071000" />
+      <workItem from="1714033507049" duration="9745000" />
+      <workItem from="1714455569279" duration="751000" />
+      <workItem from="1714457551197" duration="8000" />
+      <workItem from="1714468622150" duration="3774000" />
     </task>
     <task id="LOCAL-00004" summary="Changed by NabajitUtsab">
       <option name="closed" value="true" />
@@ -109,7 +113,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714037987540</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Changed by NabajitUtsab">
+      <option name="closed" value="true" />
+      <created>1714057394726</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1714057394726</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
