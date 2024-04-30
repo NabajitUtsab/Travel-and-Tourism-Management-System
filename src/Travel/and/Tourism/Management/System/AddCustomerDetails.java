@@ -19,6 +19,7 @@ public class AddCustomerDetails extends JFrame implements  ActionListener{
     String userName;
 
     AddCustomerDetails(String userName){
+        super("Add Details");
         this.userName=userName;
 
         setBounds(250,100,850,550);
@@ -223,6 +224,8 @@ public class AddCustomerDetails extends JFrame implements  ActionListener{
 
         else{
 
+            new Dashboard(userName);
+            setVisible(false);
         }
     }
 }
