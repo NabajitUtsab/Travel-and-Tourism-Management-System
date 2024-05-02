@@ -220,7 +220,12 @@ public class Dashboard extends JFrame implements ActionListener {
             new ViewPersonalDetails(userName);
             setVisible(false);
 
+        } else if (e.getSource()==updatePersonalDetailsButton) {
+            new UpdateCustomerDetails(userName);
+            setVisible(false);
+
         }
+
 
     }
 }
