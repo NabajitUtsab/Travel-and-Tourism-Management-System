@@ -12,9 +12,10 @@ public class UpdateCustomerDetails extends JFrame implements ActionListener {
     JLabel userNameLabel, idChoiceLabel, idNumberLabel, nameLabel, genderLabel, countryLabel, addressLabel, phoneLabel, emailLabel;
     JLabel userNameLabelText;
 
-    JTextField nameLabelText, idChoiceLabelText, idNumberLabelText, countryLabelText, addressLabelText, phoneLabelText, emailLabelText, genderLabeltext;
+    JTextField nameLabelText, idNumberLabelText, countryLabelText, addressLabelText, phoneLabelText, emailLabelText, genderLabeltext;
 
     JButton updateButton, backButton;
+    Choice idChoiceLabelText;
 
     String userName;
 
@@ -52,10 +53,13 @@ public class UpdateCustomerDetails extends JFrame implements ActionListener {
         idChoiceLabel.setFont(new Font("Tahoma", Font.BOLD, 12));
         panel.add(idChoiceLabel);
 
-        idChoiceLabelText = new JTextField();
-        idChoiceLabelText.setBounds(200, 70, 150, 25);
-        idChoiceLabelText.setFont(new Font("Tahoma", Font.BOLD, 12));
-        panel.add(idChoiceLabelText);
+        idChoiceLabelText = new Choice();
+        idChoiceLabelText.setBounds(200,70,150,25);
+        idChoiceLabelText.setFont(new Font("Tahoma",Font.BOLD,12));
+        idChoiceLabelText.setCursor(new Cursor(HAND_CURSOR));
+        idChoiceLabelText.add("Passport");
+        idChoiceLabelText.add("National ID");
+        panel.add(idChoiceLabelText);;
 
         idNumberLabel = new JLabel("ID Number");
         idNumberLabel.setBounds(30, 110, 150, 25);
@@ -158,21 +162,21 @@ public class UpdateCustomerDetails extends JFrame implements ActionListener {
         imageLabel.setBounds(510, 100, 200, 400);
         add(imageLabel);
 
-
         try {
             Database database = new Database();
-            ResultSet resultSet = database.statement.executeQuery("SELECT * FROM signup WHERE Username ='" + userName + "'");
-            while (resultSet.next()) {
+            ResultSet resultSet = database.statement.executeQuery("SELECT * FROM signup WHERE Username='"+userName+"' ");
+            while (resultSet.next()){
                 userNameLabelText.setText(resultSet.getString("Username"));
             }
 
-        } catch (Exception e) {
-
+        }catch (Exception e)
+        {
             e.printStackTrace();
         }
 
 
         setVisible(true);
+
     }
 
     public static void main(String[] args) {
@@ -182,8 +186,33 @@ public class UpdateCustomerDetails extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if(e.getSource()==updateButton){
+            String sId = idChoiceLabelText.getSelectedItem();
+            String sIdNo=idNumberLabelText.getText();
+            String sName=nameLabelText.getText();
+            String sCountry=countryLabelText.getText();
+            String sAddress = addressLabelText.getText();
+            String sPhone=phoneLabelText.getText();
+            String sEmail = emailLabelText.getText();
+            String sGender = genderLabeltext.getText();
 
+            try{
+                Database database =new Database();
+                String query="UPDATE customer SET username='"+userName+"', id='"+sId+"', id_no='"+sIdNo+"', name='"+sName+"', gender='"+sGender+"', country='"+sCountry+"', address='"+sAddress+"', phone='"+sPhone+"', email='"+sEmail+"'";
+
+                database.statement.executeUpdate(query);
+                JOptionPane.showMessageDialog(null,"Information Updated");
+                setVisible(false);
+                new Dashboard(userName);
+
+            }catch (Exception exception){
+                exception.printStackTrace();
+            }
         }
+
+        else {
+            setVisible(false);
+            new Dashboard(userName);
+        }
+
     }
 }
-
