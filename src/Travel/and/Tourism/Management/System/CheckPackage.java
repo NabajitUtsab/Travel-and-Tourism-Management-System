@@ -19,6 +19,30 @@ public class CheckPackage extends JFrame {
         packageType.setForeground(new Color(217, 217, 23));
         panel1.add(packageType);
 
+        JLabel featuresLabel=new JLabel("6 days 7 nights");
+        featuresLabel.setBounds(30,60,300,30);
+        featuresLabel.setFont(new Font("Tahoma",Font.BOLD,20));
+        featuresLabel.setForeground(Color.red);
+        panel1.add(featuresLabel);
+
+        JLabel airportAssistLabel=new JLabel("Airport Assitance");
+        airportAssistLabel.setBounds(30,110,300,30);
+        airportAssistLabel.setFont(new Font("Tahoma",Font.BOLD,20));
+        airportAssistLabel.setForeground(Color.blue);
+        panel1.add(airportAssistLabel);
+
+        JLabel dayTourLabel=new JLabel("Hallf day city Tour");
+        dayTourLabel.setBounds(30,160,300,30);
+        dayTourLabel.setFont(new Font("Tahoma",Font.BOLD,20));
+        dayTourLabel.setForeground(Color.red);
+        panel1.add(dayTourLabel);
+
+        JLabel buffetLabel=new JLabel("Daily Buffet");
+        buffetLabel.setBounds(30,210,300,30);
+        buffetLabel.setFont(new Font("Tahoma",Font.BOLD,20));
+        buffetLabel.setForeground(Color.blue);
+        panel1.add(buffetLabel);
+
 
 
         JTabbedPane tabbedPane=new JTabbedPane();
