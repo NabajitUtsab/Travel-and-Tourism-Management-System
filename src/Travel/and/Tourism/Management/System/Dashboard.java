@@ -224,6 +224,9 @@ public class Dashboard extends JFrame implements ActionListener {
             new UpdateCustomerDetails(userName);
             setVisible(false);
 
+        } else if(e.getSource()==checkPackagesButton){
+            new CheckPackage();
+
         }
 
 

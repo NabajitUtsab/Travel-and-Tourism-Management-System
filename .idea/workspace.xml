@@ -7,6 +7,7 @@
     <list default="true" id="b6f7aa76-8f67-4e40-84a7-3304214d44c3" name="Changes" comment="Modified by Nabajit Dey">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Travel/and/Tourism/Management/System/CheckPackage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Travel/and/Tourism/Management/System/CheckPackage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Travel/and/Tourism/Management/System/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Travel/and/Tourism/Management/System/Dashboard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +92,7 @@
       <workItem from="1714758525726" duration="80000" />
       <workItem from="1714851431630" duration="286000" />
       <workItem from="1715362371212" duration="2103000" />
-      <workItem from="1715419952441" duration="1687000" />
+      <workItem from="1715419952441" duration="3472000" />
     </task>
     <task id="LOCAL-00004" summary="Changed by NabajitUtsab">
       <option name="closed" value="true" />
@@ -173,7 +174,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715364447306</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Modified by Nabajit Dey">
+      <option name="closed" value="true" />
+      <created>1715422412506</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1715422412506</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
