@@ -11,9 +11,9 @@ public class CheckPackage extends JFrame {
 
         String[] pack1 ={"GOLD PACKAGE","6 days 7 nights","Airport Assitance","Hallf day city Tour","Daily Buffet","Welcome Drinks on Arrival","Full day 3 Island Cruise","English Speaking Guide","BOOK NOW !!","Summer Special","Per person BDT 40,000/- ","package1.jpg"};
 
-        String[] pack2 = {"SILVER PACKAGE","4 days and 3 Nights", "Entrance Free Tickets", "Meet and Greet at Aiport", "Welcome drinks on Arrival", "Night Safari", "Full Day 3 Island Cruise", "Cruise with Dinner", "BOOK NOW !!", "Winter Special", "Per person BDT 25,000/-","package2.jpg"};
+        String[] pack2 = {"SILVER PACKAGE","4 days and 3 Nights", "Entrance Free Tickets", "Meet and Greet at Aiport", "Welcome drinks on Arrival", "Night Safari", "Full Day 3 Island Cruise", "Cruise with Dinner", "BOOK NOW !!", "Winter Special", "Per person BDT 30,000/-S","package2.jpg"};
 
-        String[] pack3 = {"BRONZE PACKAGE","6 days and 5 Nights", "Return Airfare", "Horse Riding & other Games", "Welcome drinks on Arrival", "Daily Buffet", "Stay in 5 Star Hotel", "BBQ Dinner", "BOOK NOW !!", "Winter Special", "Per person BDT 30,000/-","package3.jpg"};
+        String[] pack3 = {"BRONZE PACKAGE","6 days and 5 Nights", "Return Airfare", "Horse Riding & other Games", "Welcome drinks on Arrival", "Daily Buffet", "Stay in 5 Star Hotel", "BBQ Dinner", "BOOK NOW !!", "Winter Special", "Per person BDT 25,000/-","package3.jpg"};
 
 
         JPanel panel1=createPackage(pack1);
