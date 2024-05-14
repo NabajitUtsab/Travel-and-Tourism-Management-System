@@ -229,6 +229,7 @@ public class Dashboard extends JFrame implements ActionListener {
 
         } else if (e.getSource()==bookPackagesButton) {
             new BookPackage(userName);
+            setVisible(false);
 
         }
 

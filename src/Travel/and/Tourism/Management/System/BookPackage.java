@@ -109,6 +109,7 @@ public class BookPackage extends JFrame implements ActionListener
         checkPriceButton.setBackground(Color.BLACK);
         checkPriceButton.setForeground(Color.WHITE);
         checkPriceButton.setBorder(BorderFactory.createEmptyBorder());
+        checkPriceButton.addActionListener(this);
         add(checkPriceButton);
 
         bookPackageButton= new JButton("Book Package");
@@ -116,6 +117,7 @@ public class BookPackage extends JFrame implements ActionListener
         bookPackageButton.setBackground(Color.BLACK);
         bookPackageButton.setForeground(Color.WHITE);
         bookPackageButton.setBorder(BorderFactory.createEmptyBorder());
+        bookPackageButton.addActionListener(this);
         add(bookPackageButton);
 
         backButton= new JButton("Back");
@@ -123,11 +125,19 @@ public class BookPackage extends JFrame implements ActionListener
         backButton.setBackground(Color.BLACK);
         backButton.setForeground(Color.WHITE);
         backButton.setBorder(BorderFactory.createEmptyBorder());
+        backButton.addActionListener(this);
         add(backButton);
 
+        ImageIcon icon = new ImageIcon(ClassLoader.getSystemResource("icons/bookpackage.jpg" ));
+        Image image= icon.getImage().getScaledInstance(500,300,Image.SCALE_DEFAULT);
+        ImageIcon imageIcon=new ImageIcon(image);
+        JLabel imageLabel=new JLabel(imageIcon);
+        imageLabel.setBounds(550,50,500,300);
+        add(imageLabel);
+
+
         try{
-           // userNameLabelText,idLabelText,idNumberLabelText,phoneLabelText,totalPriceLabelText;
-          //  username, id, id_no, name, gender, country, address, phone, email
+
             Database database = new Database();
             ResultSet resultSet = database.statement.executeQuery("SELECT * FROM customer WHERE username='"+userName+"'");
             while(resultSet.next()){
@@ -156,6 +166,51 @@ public class BookPackage extends JFrame implements ActionListener
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        int total=0;
+
+        if(e.getSource()==checkPriceButton){
+            String pack=selectPackageChoice.getSelectedItem();
+            int person=Integer.parseInt(totalPersonText.getText());
+
+
+
+            if(pack.equals("Gold Package")){
+                total+= 40000;
+            }
+            else if (pack.equals("Silver Package")) {
+                total+=30000;
+            }
+            else if (pack.equals("Bronze Package")) {
+                total+=25000;
+            }
+            total=total*person;
+
+            totalPriceLabelText.setText("BDT "+ total);
+        }
+
+        else if (e.getSource()==bookPackageButton) {
+
+
+            try{
+                String query="INSERT INTO bookpackage (username, package, totalpersons, id, id_no, phone, totalamount)"+
+                        "VALUES ('"+userName+"','"+selectPackageChoice.getSelectedItem()+"','"+totalPersonText.getText()+"','"+idLabelText.getText()+"','"+idNumberLabelText.getText()+"','"+phoneLabelText.getText()+"','"+totalPriceLabelText.getText()+"')";
+                Database database = new Database();
+                database.statement.executeUpdate(query);
+                JOptionPane.showMessageDialog(null,"Package Booked successfully");
+                setVisible(false);
+                new Dashboard(userName);
+
+
+            }catch (Exception exception){
+                exception.printStackTrace();
+            }
+
+        }
+        else {
+            setVisible(false);
+            new Dashboard(userName);
+        }
+
 
     }
 }

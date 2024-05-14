@@ -117,7 +117,7 @@ public class Login extends JFrame implements ActionListener {
                 ResultSet resultSet= database.statement.executeQuery("SELECT * FROM signup where Username='"+sUserName+"' AND Password='"+sPassword+"' ");
 
                 if (resultSet.next()){
-                    JOptionPane.showMessageDialog(null,"Login Successfull");
+                    JOptionPane.showMessageDialog(null,"Login Successful");
 
                     new Loading(sUserName);
                     setVisible(false);
