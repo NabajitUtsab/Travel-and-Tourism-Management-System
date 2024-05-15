@@ -134,6 +134,28 @@ public class ViewPackages extends JFrame implements ActionListener {
 
 
 
+        try{
+            Database database=new Database();
+            ResultSet resultSet=database.statement.executeQuery("SELECT * FROM bookpackage WHERE username ='"+userName+"'");
+
+            while(resultSet.next()){
+
+                userNameText.setText(resultSet.getString("username"));
+                selectPackageText.setText(resultSet.getString("package"));
+                totalPersonText.setText(resultSet.getString("totalpersons"));
+                idText.setText(resultSet.getString("id"));
+                idNumberText.setText(resultSet.getString("id_no"));
+                phoneText.setText(resultSet.getString("phone"));
+                totalPriceText.setText(resultSet.getString("totalamount"));
+
+
+
+            }
+
+        }catch(Exception e){
+
+            e.printStackTrace();
+        }
 
 
         setVisible(true);
@@ -144,6 +166,9 @@ public class ViewPackages extends JFrame implements ActionListener {
     }
     @Override
     public void actionPerformed(ActionEvent e) {
+        if(e.getSource()==backButton){
+            setVisible(false);
+        }
 
     }
 }
