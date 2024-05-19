@@ -31,7 +31,7 @@ public class CheckHotels extends JFrame implements Runnable{
             add(label[i]);
         }
 
-        thread=new Thread();
+        thread=new Thread(this);
         thread.start();
 
         setVisible(true);
@@ -47,7 +47,7 @@ public class CheckHotels extends JFrame implements Runnable{
         try{
             for(int i =0;i<=9;i++){
                 label[i].setVisible(true);
-                Thread.sleep(25);
+                Thread.sleep(1000);
                 label[i].setVisible(false);
             }
 
