@@ -8,8 +8,17 @@ public class CheckHotels extends JFrame implements Runnable{
     Thread thread;
     JLabel l1=null ,l2=null,l3=null,l4=null,l5=null,l6=null,l7=null, l8=null, l9=null ,l10=null;
     JLabel [] label= new JLabel[]{l1 ,l2,l3,l4,l5,l6,l7, l8, l9 ,l10};
+
+    JLabel caption;
     CheckHotels(){
         setBounds(300,50,800,600);
+
+        caption = new JLabel();
+        caption.setBounds(50,500,1000,70);
+        caption.setFont(new Font("Tahoma",Font.BOLD,40));
+        caption.setForeground(Color.WHITE);
+        add(caption);
+
 
         ImageIcon i1=null ,i2=null,i3=null,i4=null,i5=null,i6=null,i7=null, i8=null, i9=null ,i10=null;
         ImageIcon [] imageIcon =new ImageIcon[] {i1 ,i2,i3,i4,i5,i6,i7, i8, i9 ,i10};
@@ -23,12 +32,15 @@ public class CheckHotels extends JFrame implements Runnable{
 
         for(int i=0;i<=9;i++){
 
+
             imageIcon[i]=new ImageIcon(ClassLoader.getSystemResource("icons/hotel"+(i+1)+".jpg"));
             image[i]=imageIcon[i].getImage().getScaledInstance(800,600, Image.SCALE_DEFAULT);
             imageIcon1[i]=new ImageIcon(image[i]);
             label[i]=new JLabel(imageIcon1[i]);
             label[i].setBounds(0,0,800,600);
             add(label[i]);
+
+
         }
 
         thread=new Thread(this);
@@ -44,12 +56,17 @@ public class CheckHotels extends JFrame implements Runnable{
     @Override
     public void run() {
 
+        String [] strings= new String[]{"JW Marriott Hotel","Mandarin Oriental Hotel","Four Seasons Hotel","Radisson Hotel","Classio Hotel","The Bay Club Hotel","Breeze Blows Hotel","Quick Stop Hotel","Happy Mornings Motel","Moss View Hotel"};
+
         try{
             for(int i =0;i<=9;i++){
                 label[i].setVisible(true);
-                Thread.sleep(1000);
+                caption.setText(strings[i]);
+
+                Thread.sleep(2500);
                 label[i].setVisible(false);
             }
+
 
         }catch (Exception e){
             e.printStackTrace();
