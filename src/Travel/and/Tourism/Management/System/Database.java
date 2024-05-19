@@ -11,7 +11,7 @@ public class Database {
     Database(){
 
         try{
-            Class.forName("com.mysql.jdbc.Driver");
+
             connection= DriverManager.getConnection("jdbc:mysql://localhost:3306/travel","root","nabajit9");
             statement=connection.createStatement();
 

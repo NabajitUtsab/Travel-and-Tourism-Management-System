@@ -31,7 +31,7 @@ public class ViewPackages extends JFrame implements ActionListener {
         panel.setLayout(null);
         add(panel);
 
-        JLabel heading = new JLabel("View Package");
+        JLabel heading = new JLabel("VIEW PACKAGE DETAILS");
         heading.setBounds(60,0,300,30);
         heading.setFont(new Font("Tahoma",Font.BOLD,20));
         panel.add(heading);
