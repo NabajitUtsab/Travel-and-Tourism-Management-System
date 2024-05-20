@@ -13,7 +13,7 @@ public class CheckHotels extends JFrame implements Runnable{
     CheckHotels(){
         setBounds(300,50,800,600);
 
-        caption = new JLabel();
+        caption = new JLabel("");
         caption.setBounds(50,500,1000,70);
         caption.setFont(new Font("Tahoma",Font.BOLD,40));
         caption.setForeground(Color.WHITE);

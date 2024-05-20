@@ -233,6 +233,12 @@ public class Dashboard extends JFrame implements ActionListener {
 
         } else if (e.getSource()==viewPackagesButton) {
             new ViewPackages(userName);
+        } else if (e.getSource()==viewHotelsButton) {
+            new CheckHotels();
+
+        } else if (e.getSource()==destinationsButton) {
+            new Destinations();
+
         }
 
 
