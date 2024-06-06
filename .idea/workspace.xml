@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6f7aa76-8f67-4e40-84a7-3304214d44c3" name="Changes" comment="Modified by Nabajit Dey">
-      <change afterPath="$PROJECT_DIR$/src/Travel/and/Tourism/Management/System/Destinations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Travel/and/Tourism/Management/System/BookHotel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Travel/and/Tourism/Management/System/CheckHotels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Travel/and/Tourism/Management/System/CheckHotels.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Travel/and/Tourism/Management/System/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Travel/and/Tourism/Management/System/Dashboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icons/dest1.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icons/dest1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/dest1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icons/dest2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icons/dest7.jpeg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,26 +27,29 @@
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2fStUKjS4sxaU3l47vsn7e0Xrf8" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/MENTOR SUMIT/Shiktesi&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "F:/MENTOR SUMIT/Shiktesi",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task id="LOCAL-00001" summary="Changed by NabajitUtsab">
@@ -106,7 +103,14 @@
       <workItem from="1715842455604" duration="1239000" />
       <workItem from="1715937679573" duration="846000" />
       <workItem from="1716111555556" duration="4062000" />
-      <workItem from="1716185956644" duration="2674000" />
+      <workItem from="1716185956644" duration="3145000" />
+      <workItem from="1716528359461" duration="744000" />
+      <workItem from="1716623972808" duration="1723000" />
+      <workItem from="1716806858933" duration="533000" />
+      <workItem from="1716868512831" duration="11000" />
+      <workItem from="1717150132397" duration="606000" />
+      <workItem from="1717400299190" duration="824000" />
+      <workItem from="1717667595860" duration="3360000" />
     </task>
     <task id="LOCAL-00004" summary="Changed by NabajitUtsab">
       <option name="closed" value="true" />
@@ -268,7 +272,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716143960487</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Modified by Nabajit Dey">
+      <option name="closed" value="true" />
+      <created>1716200917462</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1716200917462</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,6 +298,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Changed by NabajitUtsab" />
     <MESSAGE value="Error i Update Details" />
     <MESSAGE value="Error fixed in  Update Details" />
